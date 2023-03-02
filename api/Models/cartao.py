@@ -1,7 +1,6 @@
 from django.db import models
 from rest_framework import serializers
 from .tipo_cartao import Tipo_Cartao
-# Create your models here.
 
 class Cartao(models.Model):
   class Meta:

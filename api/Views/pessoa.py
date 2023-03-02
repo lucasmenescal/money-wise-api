@@ -5,8 +5,6 @@ from rest_framework import generics
 from api.Models.pessoa import PessoaSerializer, Pessoa
 from rest_framework import viewsets
 
-# Create your views here.
-
 class PessoaViewSet(viewsets.ModelViewSet):
     queryset = Pessoa.objects.all()
     serializer_class = PessoaSerializer
