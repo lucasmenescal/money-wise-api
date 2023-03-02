@@ -18,9 +18,11 @@ from django.urls import path
 from django.conf.urls import url,include
 from rest_framework import routers
 from api.views import PessoaViewSet
+from api.Views.cartao import CartaoViewSet
 
 router = routers.DefaultRouter()
 router.register(r'pessoas', PessoaViewSet)
+router.register(r'cartao', CartaoViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
