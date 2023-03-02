@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url,include
 from rest_framework import routers
-from api.views import PessoaViewSet
 from api.Views.cartao import CartaoViewSet
+from api.Views.pessoa import PessoaViewSet
 
 router = routers.DefaultRouter()
 router.register(r'pessoas', PessoaViewSet)
